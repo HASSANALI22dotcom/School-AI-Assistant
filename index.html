@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- DOCUMENT TYPE: HTML5 -->
+
+<html lang="sw">
+<!-- LANGUAGE: Swahili - helps search engines & screen readers -->
+
+  <head>
+    <!-- ========== BASIC META TAGS ========== -->
+    
+    <meta charset="UTF-8" />
+    <!-- CHARACTER ENCODING: UTF-8 = supports all languages & emojis
+         FUNCTIONALITY: Displays Kiswahili text correctly (ä, ñ, emoji 🎓) -->
+    
+    <link rel="icon" type="image/svg+xml" href="/school-icon.svg" />
+    <!-- FAVICON: Small icon in browser tab
+         FUNCTIONALITY: Shows school logo in tab -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- RESPONSIVE: Makes app work on mobile
+         FUNCTIONALITY:
+         - width=device-width → matches screen width
+         - initial-scale=1.0 → no zoom on load -->
+    
+    <!-- ========== SEO META TAGS - FOR GOOGLE ========== -->
+    
+    <meta name="description" content="AI Assistant kwa Holy Ghost Viziwi High School na Tengeru Boys Secondary School - Arusha, Tanzania. Pata taarifa kuhusu historia, ada, kujiunga na zaidi." />
+    <!-- SEARCH ENGINE DESCRIPTION
+         FUNCTIONALITY: Shows in Google search results
+         IMPACT: Improves click-through rate -->
+    
+    <meta name="keywords" content="Holy Ghost Viziwi, Tengeru Boys, Arusha Schools, Tanzania Education, AI Assistant, School Chatbot" />
+    <!-- SEARCH KEYWORDS
+         FUNCTIONALITY: Helps Google understand content
+         NOTE: Less important now, but still useful -->
+    
+    <meta name="author" content="Holy Ghost Schools" />
+    <!-- AUTHOR INFO
+         FUNCTIONALITY: Credits creator -->
+    
+    <!-- ========== OPEN GRAPH - FOR FACEBOOK/WHATSAPP ========== -->
+    
+    <meta property="og:type" content="website" />
+    <!-- CONTENT TYPE
+         FUNCTIONALITY: Tells Facebook it's a website (not video/article) -->
+    
+    <meta property="og:title" content="Holy Ghost & Tengeru Schools AI Assistant" />
+    <!-- SOCIAL TITLE
+         FUNCTIONALITY: Title shown when shared on Facebook/WhatsApp -->
+    
+    <meta property="og:description" content="Msaidizi wa AI kwa shule za Holy Ghost Viziwi na Tengeru Boys - Arusha, Tanzania" />
+    <!-- SOCIAL DESCRIPTION
+         FUNCTIONALITY: Description shown when link is shared -->
+    
+    <meta property="og:image" content="/og-image.jpg" />
+    <!-- SOCIAL IMAGE
+         FUNCTIONALITY: Preview image when shared on social media
+         RECOMMENDED SIZE: 1200x630 pixels -->
+    
+    <!-- ========== TWITTER CARD - FOR TWITTER/X ========== -->
+    
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- TWITTER CARD TYPE
+         FUNCTIONALITY: Large image card when shared on Twitter -->
+    
+    <meta property="twitter:title" content="Holy Ghost & Tengeru Schools AI Assistant" />
+    <!-- TWITTER TITLE
+         FUNCTIONALITY: Title on Twitter share -->
+    
+    <meta property="twitter:description" content="Msaidizi wa AI kwa shule za Holy Ghost Viziwi na Tengeru Boys" />
+    <!-- TWITTER DESCRIPTION
+         FUNCTIONALITY: Description on Twitter share -->
+    
+    <!-- ========== MOBILE APP SETTINGS ========== -->
+    
+    <meta name="theme-color" content="#10b981" />
+    <!-- BROWSER THEME COLOR
+         FUNCTIONALITY: Colors mobile browser bar (Android Chrome)
+         COLOR: #10b981 = Green (matches school theme) -->
+    
+    <!-- ========== PAGE TITLE ========== -->
+    
+    <title>Schools AI Assistant | Holy Ghost & Tengeru</title>
+    <!-- BROWSER TAB TITLE
+         FUNCTIONALITY:
+         - Shows in browser tab
+         - Shows in bookmarks
+         - Shows in Google search results -->
+  </head>
+  
+  <body>
+    <!-- ========== NO JAVASCRIPT FALLBACK ========== -->
+    
+    <noscript>
+      <!-- SHOWN IF JAVASCRIPT IS DISABLED
+           FUNCTIONALITY: Tells user to enable JavaScript -->
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>⚠️ JavaScript Required</h1>
+        <p>Tafadhali washa JavaScript katika browser yako ili kutumia application hii.</p>
+        <p>Please enable JavaScript in your browser to use this application.</p>
+      </div>
+    </noscript>
+    
+    <!-- ========== ROOT ELEMENT ========== -->
+    
+    <div id="root"></div>
+    <!-- REACT MOUNT POINT
+         FUNCTIONALITY:
+         1. Empty div where React app will be inserted
+         2. index.js finds this by getElementById('root')
+         3. React renders entire app inside this div
+         
+         BEFORE REACT: <div id="root"></div>
+         AFTER REACT:  <div id="root"><App>...</App></div> -->
+    
+    <!-- ========== MAIN SCRIPT ========== -->
+    
+    <script type="module" src="/src/index.js"></script>
+    <!-- LOAD JAVASCRIPT
+         FUNCTIONALITY:
+         - type="module" → ES6 modules (import/export)
+         - Loads index.js → which loads React & App.jsx
+         - Vite processes this during build -->
+  </body>
+</html>
+
+<!-- 
+========== HOW IT ALL WORKS TOGETHER ==========
+
+1. Browser loads index.html
+   ↓
+2. Sees <div id="root"></div>
+   ↓
+3. Loads <script src="/src/index.js">
+   ↓
+4. index.js runs:
+   - import React
+   - import App
+   - ReactDOM.createRoot(getElementById('root'))
+   - Renders <App /> inside root div
+   ↓
+5. App.jsx renders Schools AI Assistant
+   ↓
+6. User sees chatbot!
+
+========== SEO & SOCIAL SHARING FLOW ==========
+
+GOOGLE SEARCH:
+- Reads <title> → Shows in search results
+- Reads <meta description> → Shows preview text
+- Uses <meta keywords> → Understands content
+
+FACEBOOK/WHATSAPP SHARE:
+- Reads <meta og:title>
+- Reads <meta og:description>
+- Shows <meta og:image>
+- Creates preview card
+
+TWITTER SHARE:
+- Reads <meta twitter:card>
+- Reads <meta twitter:title>
+- Reads <meta twitter:description>
+- Shows large image card
+
+MOBILE BROWSER:
+- Reads <meta theme-color>
+- Colors address bar to match app
+
+========== BEST PRACTICES USED ==========
+
+✅ UTF-8 encoding - All languages work
+✅ Responsive viewport - Works on mobile
+✅ SEO meta tags - Google finds it
+✅ Social meta tags - Beautiful shares
+✅ Theme color - Professional look
+✅ Favicon - Brand recognition
+✅ No-JS fallback - Accessible
+✅ Semantic HTML - Screen readers work
+✅ Lang attribute - Helps translation
+-->

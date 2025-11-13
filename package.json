@@ -1,0 +1,139 @@
+/* ========== PROJECT INFO ========== */
+  "name": "holy-ghost-schools-ai",
+  /* FUNCTIONALITY: Project identifier - used by npm */
+  
+  "version": "1.0.0",
+  /* FUNCTIONALITY: Version number (Semantic Versioning) */
+  
+  "description": "AI Assistant for Holy Ghost Viziwi High School and Tengeru Boys Secondary School",
+  /* FUNCTIONALITY: Short description - appears on npm, GitHub */
+  
+  "author": "Your Name",
+  /* FUNCTIONALITY: Who created this project */
+  
+  "license": "MIT",
+  /* FUNCTIONALITY: Open source license - allows free use */
+  
+  "keywords": [
+    "ai-chatbot",        /* Makes project searchable */
+    "education",
+    "tanzania",
+    "react",
+    "holy-ghost-schools"
+  ],
+  /* FUNCTIONALITY: Search terms for npm registry */
+  
+  "private": true,
+  /* FUNCTIONALITY: Prevents accidental publishing to npm */
+  
+  "type": "module",
+  /* FUNCTIONALITY: Uses ES6 modules (import/export) instead of require() */
+
+  /* ========== SCRIPTS - COMMANDS ========== */
+  "scripts": {
+    "dev": "vite",
+    /* FUNCTIONALITY: Runs development server
+       COMMAND: npm run dev
+       RESULT: Opens app at http://localhost:3000 with hot reload */
+    
+    "build": "vite build",
+    /* FUNCTIONALITY: Creates production build
+       COMMAND: npm run build
+       RESULT: Creates optimized files in /dist folder */
+    
+    "preview": "vite preview",
+    /* FUNCTIONALITY: Preview production build locally
+       COMMAND: npm run preview
+       RESULT: Tests production build before deployment */
+    
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+    /* FUNCTIONALITY: Checks code for errors
+       COMMAND: npm run lint
+       RESULT: Shows code quality issues */
+  },
+
+  /* ========== DEPENDENCIES - REQUIRED PACKAGES ========== */
+  "dependencies": {
+    "react": "^18.2.0",
+    /* FUNCTIONALITY: React library - builds UI components
+       WHY: Core of our app, manages state & rendering */
+    
+    "react-dom": "^18.2.0",
+    /* FUNCTIONALITY: Connects React to browser DOM
+       WHY: Renders React components as HTML */
+    
+    "lucide-react": "^0.263.1"
+    /* FUNCTIONALITY: Icon library
+       WHY: Provides icons like Send, Phone, School, Moon, etc
+       USED IN: All buttons and UI elements */
+  },
+
+  /* ========== DEV DEPENDENCIES - DEVELOPMENT TOOLS ========== */
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    /* FUNCTIONALITY: TypeScript type definitions for React
+       WHY: Better code completion in editors */
+    
+    "@types/react-dom": "^18.2.7",
+    /* FUNCTIONALITY: TypeScript types for ReactDOM
+       WHY: Type safety for DOM operations */
+    
+    "@vitejs/plugin-react": "^4.0.3",
+    /* FUNCTIONALITY: Vite plugin for React
+       WHY: Enables fast refresh & JSX transformation */
+    
+    "autoprefixer": "^10.4.14",
+    /* FUNCTIONALITY: Adds vendor prefixes to CSS
+       WHY: Makes CSS work on all browsers (-webkit-, -moz-, etc) */
+    
+    "eslint": "^8.45.0",
+    /* FUNCTIONALITY: Code quality checker
+       WHY: Finds bugs and enforces coding standards */
+    
+    "eslint-plugin-react": "^7.32.2",
+    /* FUNCTIONALITY: ESLint rules for React
+       WHY: React-specific code quality checks */
+    
+    "eslint-plugin-react-hooks": "^4.6.0",
+    /* FUNCTIONALITY: ESLint rules for React Hooks
+       WHY: Ensures correct useState, useEffect usage */
+    
+    "eslint-plugin-react-refresh": "^0.4.3",
+    /* FUNCTIONALITY: ESLint for Fast Refresh
+       WHY: Maintains state during hot reload */
+    
+    "postcss": "^8.4.27",
+    /* FUNCTIONALITY: CSS transformer
+       WHY: Processes Tailwind CSS & autoprefixer */
+    
+    "tailwindcss": "^3.3.3",
+    /* FUNCTIONALITY: Utility-first CSS framework
+       WHY: Provides classes like bg-blue-500, p-4, rounded-lg
+       USED IN: All styling in App.jsx */
+    
+    "vite": "^4.4.5"
+    /* FUNCTIONALITY: Build tool & dev server
+       WHY: Super fast hot reload, optimized builds
+       REPLACES: webpack, create-react-app */
+  }
+}
+
+/* 
+HOW IT WORKS TOGETHER:
+1. npm install → Downloads all dependencies
+2. npm run dev → Vite starts server
+3. Vite uses plugin-react → Transforms JSX
+4. PostCSS processes → Tailwind CSS
+5. Autoprefixer adds → Browser compatibility
+6. React renders → App.jsx
+7. ReactDOM puts → Everything in HTML
+8. ESLint checks → Code quality
+9. Browser shows → Schools AI Assistant
+
+VERSION NUMBERS EXPLAINED:
+^ = Compatible updates allowed
+^18.2.0 means:
+  ✅ 18.2.1 - OK (patch)
+  ✅ 18.3.0 - OK (minor)
+  ❌ 19.0.0 - NO (major)
+*/
